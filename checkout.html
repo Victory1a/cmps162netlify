@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Star Trek Ship Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body onload="loadCheckout()">
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <div id="checkout">
+        <h2>Order Summary</h2>
+        <ul id="checkout-items"></ul>
+        <p><strong>Total Cost:</strong> $<span id="checkout-total-cost">0</span></p>
+        <button onclick="completePurchase()">Complete Purchase</button>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Star Trek Ship Store</p>
+    </footer>
+</body>
+</html>

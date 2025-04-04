@@ -1,0 +1,58 @@
+Index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Trek Ship Store</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<header>
+<h1>Star Trek Ship Store</h1>
+<nav class="navbar">
+<ul>
+<li><a href="#ships">Ships</a></li>
+<li><a href="#cart">Cart</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- Search Bar -->
+<div id="search">
+<h2>Search Ships</h2>
+<input type="text" id="search-input" placeholder="Search for a ship..." oninput="filterShips()" />
+</div>
+
+
+<!-- Speed Filter -->
+<label for="speed-filter">Filter by Speed:</label>
+<select id="speed-filter" onchange="filterShips()">
+<option value="">All Speeds</option>
+</select>
+</div>
+
+<div id="comparison-results" style="padding: 10px; margin-top: 20px; border: 1px solid #ccc;">
+    Select two ships to compare.
+</div>
+
+<!-- Ship List -->
+<div id="ships">
+<h2>Available Ships</h2>
+<div class="ship-list"></div>
+</div>
+
+<!-- Shopping Cart -->
+<div id="cart">
+<h2>Shopping Cart</h2>
+<ul id="cart-items"></ul>
+<p><strong>Total Cost:</strong> $<span id="total-cost">0</span></p>
+<button onclick="proceedToCheckout()">Proceed to Checkout</button>
+</div>
+
+<footer>
+<p>&copy; 2025 Star Trek Ship Store</p>
+</footer>
+</body>
+</html>
